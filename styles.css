@@ -1,0 +1,74 @@
+html {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; !important
+}
+
+header {
+  font-weight: bold;
+}
+
+body {
+  color: black;
+  background-color: #f4f3f2;
+  margin: 5% 20%
+}
+
+main {
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #000000;
+}
+
+.tabs input[type="radio"] {
+  display: none;
+}
+
+.tab-content {
+  display: none;
+  padding: 1rem 0;
+}
+
+#tab-about:checked ~ #content-about,
+#tab-code:checked ~ #content-code {
+  display: block;
+}
+
+.tabs label {
+  display: inline-block;
+  padding: 0.4em 0.8em;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+#tab-about:checked ~ label[for="tab-about"],
+#tab-code:checked ~ label[for="tab-code"] {
+  border-bottom-color: #000;
+}
+
+.links {
+  display: flex;
+  max-width: 100%;
+  justify-content: left;
+	gap: 5%;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+a.button {
+	padding: 0.3em 0.7em;
+	border-radius: 3px;
+	color: #f4f3f2;
+	background-color: #000000;
+  text-decoration: inherit;
+}
+
+a.button:hover {
+  background-color: #f4f3f2;
+  color: #000000;
+}
+
+footer {
+  text-align: left;
+  color: #666666;
+}
